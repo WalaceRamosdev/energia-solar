@@ -1,0 +1,87 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section class="section-padding bg-emerald-600 text-white relative overflow-hidden">
+  <!-- Decorative Background -->
+  <div class="absolute top-0 right-0 w-1/3 h-full bg-emerald-500 skew-x-12 translate-x-1/2 opacity-20"></div>
+
+  <div class="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-3xl md:text-5xl font-bold font-montserrat mb-6">
+          Financie com o próprio dinheiro da <span class="text-amber-400">economia</span>.
+        </h2>
+        <p class="text-emerald-50 text-lg mb-8 leading-relaxed">
+          A parcela do financiamento sai mais barata que sua conta atual. Você não precisa ter o valor à vista para começar a economizar hoje mesmo.
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex items-center space-x-4">
+            <div class="bg-white/10 p-3 rounded-full">
+              <Icon name="mdi:bank" class="w-6 h-6 text-amber-400" />
+            </div>
+            <div>
+              <p class="font-bold">Principais Bancos Parceiros</p>
+              <p class="text-emerald-100 text-sm">Santander, BV, Solfácil e Losango.</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="bg-white/10 p-3 rounded-full">
+              <Icon name="mdi:calendar-clock" class="w-6 h-6 text-amber-400" />
+            </div>
+            <div>
+              <p class="font-bold">Até 84 meses para pagar</p>
+              <p class="text-emerald-100 text-sm">Carência de até 120 dias para a primeira parcela.</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="bg-white/10 p-3 rounded-full">
+              <Icon name="mdi:percent" class="w-6 h-6 text-amber-400" />
+            </div>
+            <div>
+              <p class="font-bold">Taxas Reduzidas</p>
+              <p class="text-emerald-100 text-sm">Linhas de crédito específicas para energia renovável.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="bg-white rounded-3xl p-8 text-gray-900 shadow-2xl">
+        <h3 class="text-2xl font-bold text-center mb-8">Exemplo de Troca Inteligente</h3>
+        
+        <div class="space-y-4">
+          <div class="flex items-center justify-between p-4 bg-red-50 rounded-xl border border-red-100">
+            <div>
+              <p class="text-xs font-bold text-red-600 uppercase">Sua conta hoje</p>
+              <p class="text-2xl font-bold text-red-700">R$ 650,00</p>
+            </div>
+            <Icon name="mdi:trending-up" class="w-8 h-8 text-red-400" />
+          </div>
+
+          <div class="flex justify-center">
+            <Icon name="mdi:arrow-down-bold" class="w-8 h-8 text-emerald-500 animate-bounce" />
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-emerald-50 rounded-xl border border-emerald-100">
+            <div>
+              <p class="text-xs font-bold text-emerald-600 uppercase">Parcela do Financiamento</p>
+              <p class="text-2xl font-bold text-emerald-700">R$ 520,00</p>
+            </div>
+            <Icon name="mdi:check-circle" class="w-8 h-8 text-emerald-500" />
+          </div>
+        </div>
+
+        <div class="mt-8 p-4 bg-amber-50 rounded-xl border border-amber-100 text-center">
+          <p class="text-amber-900 font-bold">Economia Mensal Imediata: R$ 130,00</p>
+          <p class="text-amber-800 text-xs mt-1">E após quitar o financiamento, a conta é ZERO!</p>
+        </div>
+
+        <button class="btn-primary w-full mt-8 py-4">
+          Consultar Crédito Agora
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

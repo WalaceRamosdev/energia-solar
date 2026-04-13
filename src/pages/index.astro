@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import PainSolution from '../components/PainSolution.astro';
+import Calculator from '../components/Calculator.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import SocialProof from '../components/SocialProof.astro';
+import Financing from '../components/Financing.astro';
+import FAQ from '../components/FAQ.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const title = "SolarMax Energia | Zere sua Conta de Luz e Tenha Lucro Garantido";
+const description = "Instalação de energia solar em até 7 dias com financiamento em até 84x. Economize até 95% na sua conta de luz e valorize seu patrimônio.";
+---
+
+<Layout title={title} description={description}>
+	<Header />
+	<main>
+		<Hero />
+		<PainSolution />
+		<Calculator />
+		<HowItWorks />
+		<SocialProof />
+		<Financing />
+		<FAQ />
+	</main>
+	<Footer />
+	<WhatsAppButton />
+</Layout>

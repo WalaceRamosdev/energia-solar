@@ -1,0 +1,18 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<a 
+  href="https://wa.me/5511999999999" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group"
+  aria-label="Falar no WhatsApp"
+>
+  <Icon name="mdi:whatsapp" class="w-8 h-8" />
+  
+  <!-- Tooltip -->
+  <span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-gray-900 px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-gray-100">
+    Falar com Especialista
+  </span>
+</a>

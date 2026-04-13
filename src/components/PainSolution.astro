@@ -1,0 +1,98 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section id="beneficios" class="section-padding bg-gray-50">
+  <div class="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 font-montserrat mb-4">
+        Por que continuar alugando energia da concessionária?
+      </h2>
+      <p class="text-gray-600 text-lg">
+        Enquanto você paga a conta, o dinheiro vai embora. Com a solar, você paga o sistema e ele vira seu patrimônio.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Comparativo Visual -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+        <h3 class="text-xl font-bold mb-8 text-center">Comparativo de Investimento (25 Anos)</h3>
+        
+        <div class="space-y-8">
+          <!-- Concessionária -->
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-bold text-red-600">Conta de Luz Tradicional</span>
+              <span class="text-red-600 font-bold">+ Inflação Energética</span>
+            </div>
+            <div class="w-full bg-gray-100 rounded-full h-8 overflow-hidden">
+              <div class="bg-red-500 h-full w-full flex items-center px-4">
+                <span class="text-white text-xs font-bold">DINHEIRO PERDIDO PARA SEMPRE</span>
+              </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-2 italic">* A inflação energética média no Brasil é de 10% ao ano.</p>
+          </div>
+
+          <!-- Solar -->
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-bold text-emerald-600">Energia SolarMax</span>
+              <span class="text-emerald-600 font-bold">Patrimônio Líquido</span>
+            </div>
+            <div class="w-full bg-gray-100 rounded-full h-8 overflow-hidden">
+              <div class="bg-emerald-500 h-full w-1/4 flex items-center px-4">
+                <span class="text-white text-xs font-bold">INVESTIMENTO</span>
+              </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-2 italic">* Sistema se paga em 3-4 anos. Depois disso, a energia é GRATUITA.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 p-4 bg-emerald-50 rounded-lg border border-emerald-100">
+          <p class="text-emerald-800 font-medium text-center">
+            "Trave seu custo de energia hoje e proteja-se dos aumentos abusivos da bandeira tarifária."
+          </p>
+        </div>
+      </div>
+
+      <!-- Copy Persuasiva -->
+      <div class="space-y-6">
+        <div class="flex items-start space-x-4">
+          <div class="bg-emerald-100 p-3 rounded-lg">
+            <Icon name="mdi:trending-up" class="w-6 h-6 text-emerald-600" />
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-emerald-900 mb-2">Valorização Imediata</h4>
+            <p class="text-gray-600">Imóveis com energia solar valorizam em média 10% no mercado imobiliário. É um investimento que se paga duas vezes.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-emerald-100 p-3 rounded-lg">
+            <Icon name="mdi:shield-check" class="w-6 h-6 text-emerald-600" />
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-emerald-900 mb-2">Liberdade Total</h4>
+            <p class="text-gray-600">Ligue o ar-condicionado sem medo. Use sua energia como quiser, sem se preocupar com a cor da bandeira tarifária.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-emerald-100 p-3 rounded-lg">
+            <Icon name="mdi:leaf" class="w-6 h-6 text-emerald-600" />
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-emerald-900 mb-2">Sustentabilidade Real</h4>
+            <p class="text-gray-600">Reduza sua pegada de carbono e contribua para um planeta mais limpo enquanto economiza milhares de reais.</p>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <a href="#calculadora" class="btn-primary w-full md:w-auto">
+            Quero parar de rasgar dinheiro
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

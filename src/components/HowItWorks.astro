@@ -1,0 +1,64 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const steps = [
+  {
+    title: "Visita Técnica Gratuita",
+    description: "Analisamos seu telhado, orientação solar e histórico de consumo para criar a solução perfeita.",
+    icon: "mdi:clipboard-text-search-outline"
+  },
+  {
+    title: "Projeto e Burocracia",
+    description: "Nossa equipe cuida de toda a aprovação na concessionária. Você não se preocupa com nada.",
+    icon: "mdi:file-document-edit-outline"
+  },
+  {
+    title: "Instalação Rápida",
+    description: "Equipe própria e treinada. Instalação limpa e segura em apenas 1 ou 2 dias.",
+    icon: "mdi:tools"
+  },
+  {
+    title: "Economia Imediata",
+    description: "Sistema ligado e homologado. Comece a ver sua conta de luz despencar no primeiro mês.",
+    icon: "mdi:lightning-bolt"
+  }
+];
+---
+
+<section id="como-funciona" class="section-padding bg-white">
+  <div class="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 font-montserrat mb-4">
+        Burocracia Zero. Nós resolvemos tudo.
+      </h2>
+      <p class="text-gray-600 text-lg">
+        Do primeiro contato à conta zerada, acompanhamos você em cada etapa do processo.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {steps.map((step, index) => (
+        <div class="relative p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-shadow group">
+          <!-- Step Number -->
+          <div class="absolute -top-4 left-4 w-10 h-10 bg-amber-400 text-emerald-900 font-bold flex items-center justify-center rounded-lg shadow-md z-10">
+            {index + 1}
+          </div>
+          
+          <div class="mb-6 text-emerald-600 group-hover:scale-110 transition-transform duration-300">
+            <Icon name={step.icon} class="w-12 h-12" />
+          </div>
+          
+          <h3 class="text-xl font-bold text-emerald-900 mb-3">{step.title}</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">{step.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-16 text-center">
+      <div class="inline-flex items-center space-x-2 bg-emerald-50 text-emerald-700 px-6 py-3 rounded-full font-bold border border-emerald-100">
+        <Icon name="mdi:information-outline" class="w-5 h-5" />
+        <span>Instalação em até 7 dias após a aprovação do projeto.</span>
+      </div>
+    </div>
+  </div>
+</section>

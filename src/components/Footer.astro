@@ -1,0 +1,111 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<footer class="bg-gray-900 text-white pt-20 pb-10">
+  <div class="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16">
+    <!-- Final CTA -->
+    <div class="bg-emerald-600 rounded-3xl p-8 md:p-16 text-center mb-20 relative overflow-hidden">
+      <div class="relative z-10">
+        <h2 class="text-3xl md:text-5xl font-bold font-montserrat mb-6">
+          Pare de rasgar dinheiro. Comece a investir no seu patrimônio.
+        </h2>
+        <p class="text-emerald-100 text-lg mb-10 max-w-2xl mx-auto">
+          Junte-se a milhares de brasileiros que já estão protegidos contra os aumentos da conta de luz.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <a href="#calculadora" class="btn-secondary text-lg px-10 py-4 w-full sm:w-auto">
+            Simular Economia Agora
+          </a>
+          <a href="https://wa.me/5511999999999" class="flex items-center space-x-2 text-white font-bold hover:text-amber-400 transition-colors">
+            <Icon name="mdi:whatsapp" class="w-8 h-8" />
+            <span>Falar com um Especialista</span>
+          </a>
+        </div>
+      </div>
+      <!-- Background Pattern -->
+      <Icon name="mdi:white-balance-sunny" class="absolute -bottom-20 -right-20 w-80 h-80 text-emerald-500 opacity-20" />
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <!-- About -->
+      <div>
+        <div class="flex items-center space-x-2 mb-6">
+          <div class="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center">
+            <Icon name="mdi:white-balance-sunny" class="w-5 h-5 text-white" />
+          </div>
+          <span class="text-xl font-bold font-montserrat">SolarMax</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Líder em soluções de energia renovável, ajudando famílias e empresas a conquistarem independência energética com tecnologia de ponta e atendimento humanizado.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <Icon name="mdi:instagram" class="w-6 h-6" />
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <Icon name="mdi:facebook" class="w-6 h-6" />
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <Icon name="mdi:linkedin" class="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-amber-400">Navegação</h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li><a href="#beneficios" class="hover:text-white transition-colors">Benefícios</a></li>
+          <li><a href="#como-funciona" class="hover:text-white transition-colors">Como Funciona</a></li>
+          <li><a href="#calculadora" class="hover:text-white transition-colors">Calculadora</a></li>
+          <li><a href="#faq" class="hover:text-white transition-colors">Dúvidas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-amber-400">Contato</h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li class="flex items-start space-x-3">
+            <Icon name="mdi:map-marker" class="w-5 h-5 text-emerald-500 shrink-0" />
+            <span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <Icon name="mdi:phone" class="w-5 h-5 text-emerald-500 shrink-0" />
+            <span>(11) 4004-0000</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <Icon name="mdi:email" class="w-5 h-5 text-emerald-500 shrink-0" />
+            <span>contato@solarmaxenergia.com.br</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-amber-400">Receba Dicas</h4>
+        <p class="text-gray-400 text-sm mb-4">Assine nossa newsletter e receba novidades sobre energia solar.</p>
+        <form class="flex">
+          <input 
+            type="email" 
+            placeholder="Seu e-mail" 
+            class="bg-gray-800 border-none rounded-l-lg px-4 py-2 w-full focus:ring-1 focus:ring-emerald-500"
+          />
+          <button class="bg-emerald-600 px-4 py-2 rounded-r-lg hover:bg-emerald-700 transition-colors">
+            <Icon name="mdi:send" class="w-5 h-5" />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="pt-10 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs space-y-4 md:space-y-0">
+      <p>© 2024 SolarMax Energia Solar Ltda. CNPJ: 00.000.000/0001-00</p>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-white">Política de Privacidade</a>
+        <a href="#" class="hover:text-white">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>

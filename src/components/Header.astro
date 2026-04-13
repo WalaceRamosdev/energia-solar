@@ -1,0 +1,39 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<header 
+  x-data="{ scrolled: false }" 
+  @scroll.window="scrolled = (window.pageYOffset > 20)"
+  :class="scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <div class="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="flex items-center space-x-2">
+      <div class="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center">
+        <Icon name="mdi:white-balance-sunny" class="w-6 h-6 text-white" />
+      </div>
+      <span :class="scrolled ? 'text-emerald-900' : 'text-white'" class="text-xl font-bold font-montserrat transition-colors">SolarMax</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#beneficios" :class="scrolled ? 'text-gray-600 hover:text-emerald-600' : 'text-white/90 hover:text-white'" class="font-medium transition-colors">Benefícios</a>
+      <a href="#como-funciona" :class="scrolled ? 'text-gray-600 hover:text-emerald-600' : 'text-white/90 hover:text-white'" class="font-medium transition-colors">Como Funciona</a>
+      <a href="#calculadora" :class="scrolled ? 'text-gray-600 hover:text-emerald-600' : 'text-white/90 hover:text-white'" class="font-medium transition-colors">Economia</a>
+      <a href="#faq" :class="scrolled ? 'text-gray-600 hover:text-emerald-600' : 'text-white/90 hover:text-white'" class="font-medium transition-colors">FAQ</a>
+    </nav>
+
+    <!-- CTA & WhatsApp -->
+    <div class="flex items-center space-x-4">
+      <a href="https://wa.me/5511999999999" target="_blank" class="hidden lg:flex items-center space-x-1 text-black-600 font-bold">
+        <Icon name="mdi:whatsapp" class="w-5 h-5" />
+        <span>(11) 99999-9999</span>
+      </a>
+      <a href="#calculadora" class="btn-secondary animate-pulse-cta text-sm md:text-base px-4 py-2 md:px-6 md:py-3">
+        Simular Economia
+      </a>
+    </div>
+  </div>
+</header>

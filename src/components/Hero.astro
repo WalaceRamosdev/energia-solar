@@ -1,0 +1,65 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=1920" 
+      alt="Casa moderna com painéis solares" 
+      class="w-full h-full object-cover"
+      referrerpolicy="no-referrer"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-emerald-900/40"></div>
+  </div>
+
+  <div class="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16 relative z-10">
+    <div class="max-w-3xl">
+      <!-- Badge -->
+      <div class="inline-flex items-center space-x-2 bg-amber-400/20 text-amber-400 px-4 py-2 rounded-full mb-6 border border-amber-400/30">
+        <Icon name="mdi:star" class="w-4 h-4" />
+        <span class="text-sm font-bold uppercase tracking-wider">Líder em Instalações no Brasil</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white font-montserrat leading-tight mb-6">
+        Zere sua Conta de Luz e Tenha <span class="text-amber-400">Lucro Garantido</span> por 25 Anos.
+      </h1>
+
+      <!-- Sub-headline -->
+      <p class="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
+        Instalação de Energia Solar em até 7 dias. Financiamento em até 84x que cabe no bolso. Mais de 1.500 casas e empresas já economizando.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
+        <a href="#calculadora" class="btn-secondary text-lg w-full sm:w-auto">
+          Quero Meu Orçamento Grátis
+        </a>
+        <a href="#como-funciona" class="flex items-center space-x-2 text-white hover:text-amber-400 transition-colors font-medium">
+          <Icon name="mdi:play-circle" class="w-8 h-8" />
+          <span>Ver como funciona</span>
+        </a>
+      </div>
+
+      <!-- Prova Social Imediata -->
+      <div class="flex flex-wrap items-center gap-6 pt-8 border-t border-white/10">
+        <div class="flex items-center space-x-2">
+          <div class="flex text-amber-400">
+            <Icon name="mdi:star" class="w-5 h-5" />
+            <Icon name="mdi:star" class="w-5 h-5" />
+            <Icon name="mdi:star" class="w-5 h-5" />
+            <Icon name="mdi:star" class="w-5 h-5" />
+            <Icon name="mdi:star" class="w-5 h-5" />
+          </div>
+          <span class="text-white text-sm font-medium">4.9/5 no Google (+300 avaliações)</span>
+        </div>
+        <div class="flex items-center space-x-4 opacity-70 grayscale invert">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Inmetro_logo.svg/1200px-Inmetro_logo.svg.png" alt="Inmetro" class="h-8" />
+          <img src="https://www.aneel.gov.br/documents/10170/14545/Logo_ANEEL_Vertical_Cor.png" alt="ANEEL" class="h-8" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
